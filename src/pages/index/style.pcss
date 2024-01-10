@@ -30,8 +30,8 @@ p {
 }
 
 .hero {
-    /* height: 768px; */
-    width: 100vw;
+    height: 768px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +41,7 @@ p {
         left: 0;
         top: 0;
         height: 768px;
-        width: 100vw;
+        width: 100%;
         opacity: 0.2;
         background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0.00) 31.12%);
         z-index: -1;
@@ -83,4 +83,8 @@ p {
 
 .assist {
     margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

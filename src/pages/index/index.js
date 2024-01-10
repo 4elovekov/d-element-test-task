@@ -1,6 +1,7 @@
 import { getPage } from "../../shared/lib/index.js";
 import { Button } from "../../shared/ui/button/index.js";
 import { Navigation } from "../../shared/ui/navigation/index.js";
+import { Card } from "../../entities/card/index.js";
 
 export default () => {
 
@@ -23,6 +24,12 @@ export default () => {
             </section>
             <section class="assist">
                 <h2>What we do to help our client grow in digital era,</h2>
+                ${Card({
+                    imageSrc: "/images/card_image1.png",
+                    title: "Bring Technology To Your Comfrotable Home",
+                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    link: "",
+                })}
             </section>
 
         `,
