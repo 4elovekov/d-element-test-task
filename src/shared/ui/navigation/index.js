@@ -6,7 +6,7 @@ export function Navigation (props) {
 
     return `<nav class="${getClassName("",  extraClasses)}" ${getAttrs(extraAttrs)}>
                 ${children || `
-                    <img src="/images/logo.png" class="${getClassName("logo")}}" alt="logo"/>
+                    <a href="#" target="blank"><img src="/images/logo.png" class="${getClassName("logo")}}" alt="logo"/></a>
                     <img src="/images/menu.svg" class="${getClassName("menu")}}" alt="menu"/>
                 `}
             </nav>   

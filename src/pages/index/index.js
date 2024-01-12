@@ -23,13 +23,42 @@ export default () => {
                 </div>
             </section>
             <section class="assist">
-                <h2>What we do to help our client grow in digital era,</h2>
-                ${Card({
-                    imageSrc: "/images/card_image1.png",
-                    title: "Bring Technology To Your Comfrotable Home",
-                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    link: "",
-                })}
+                <div class="assist__leftSide">
+                    <h2>What we do to help our client grow in digital era,</h2>
+                    ${Card({
+                        imageSrc: "/images/card_image2.svg",
+                        title: "Make Your business To Be Better Famous In Internet",
+                    })}
+                </div>
+                <div class="assist__rightSide">
+                    ${Card({
+                        imageSrc: "/images/card_image1.svg",
+                        title: "Bring Technology To Your Comfrotable Home",
+                    })}
+                    ${Card({
+                        imageSrc: "/images/card_image3.svg",
+                        title: "Build Your Digital Product That Suitable For Your Need",
+                    })}
+                </div>
+            </section>
+            <section class="client">
+                <div class="client__container">
+                    <div class="client__title">
+                        <h2>Our Beloved Client</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="logoClients">
+                        <div class="logoClients__item"><p>LOGO CLIENT 1</p></div>
+                        <div class="logoClients__item"><p>LOGO CLIENT 2</p></div>
+                        <div class="logoClients__item"><p>LOGO CLIENT 3</p></div>
+                        <div class="logoClients__item"><p>LOGO CLIENT 4</p></div>
+                        <div class="logoClients__item"><p>LOGO CLIENT 5</p></div>
+                        <div class="logoClients__item"><p>LOGO CLIENT 6</p></div>
+                        <div class="logoClients__item"><p>LOGO CLIENT 7</p></div>
+                        <div class="logoClients__item logoClients__moreClients"><p>More Client</p></div>
+                        <div class="logoClients__item"></div>
+                    </div>
+                </div>
             </section>
 
         `,
