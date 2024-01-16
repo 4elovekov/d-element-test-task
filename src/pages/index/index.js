@@ -2,6 +2,7 @@ import { getPage } from "../../shared/lib/index.js";
 import { Button } from "../../shared/ui/button/index.js";
 import { Navigation } from "../../shared/ui/navigation/index.js";
 import { Card } from "../../entities/card/index.js";
+import { Footer } from "../../widgets/footer/index.js"
 
 export default () => {
 
@@ -59,7 +60,11 @@ export default () => {
                         <div class="logoClients__item"></div>
                     </div>
                 </div>
+                ${Footer({
+                    children: Button({ label: "Let’s Talk" })
+                })}
             </section>
+            
 
         `,
     })
