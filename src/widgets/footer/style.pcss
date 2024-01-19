@@ -51,9 +51,98 @@
     }
 
     &__main {
+        width: 860px;
         display: flex;
         flex-direction: column;
         gap: 64px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-right: 100px;
+    }
+
+    &__contacts > :first-child {
+        margin-bottom: 9px;
+    }
+
+    &__subTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 16px;
+
+        h3 {
+            color: white;
+        }
+    }
+
+    &__subTitle > a:not(:first-child) {
+
+        h3 {
+            font-size: 28px;
+            line-height: 46px;
+            letter-spacing: .02em;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+
+        p {
+            color: white;
+            font-weight: 600;
+            opacity: 1;
+            max-width: 264px;
+        }
+    }
+
+    &__text :last-child {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        opacity: 1;
+        max-width: 264px;
+        font-family: "Gilroy rg", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 26px;
+        letter-spacing: .05em;
+        cursor: pointer;
+    }
+
+    &__about {
+        margin-right: 77px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__follow {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__rights {
+
+        p {
+            color: white;
+            opacity: .4;
+        }
     }
 
 }

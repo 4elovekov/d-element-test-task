@@ -29,7 +29,7 @@ export function Footer(props) {
                         <div class="${getClassName("contacts")}">
                             <div class="${getClassName("subTitle")}">
                                 <img src="/images/footer_logo.png" alt="logo">
-                                <h3>Afrianska</h3>
+                                <a href="#" target="_blank"><h3>Afrianska</h3></a>
                             </div>
                             <div class="${getClassName("text")}">
                                 <p>A.</p>
@@ -45,18 +45,18 @@ export function Footer(props) {
                             </div>
                         </div>
                         <div class="${getClassName("about")}">
-                            <div class="${getClassName("subTitle")}"><h3>About US</h3></div>
-                            <div class="${getClassName("text")}"><p>About</p></div>
-                            <div class="${getClassName("text")}"><p>What We Do</p></div>
-                            <div class="${getClassName("text")}"><p>Project</p></div>
-                            <div class="${getClassName("text")}"><p>How It Work With Us</p></div>
+                            <div class="${getClassName("subTitle")}"><a href="https://d-element.ru/" target="_blank"><h3>About US</h3></a></div>
+                            <div class="${getClassName("text")}"><a href="https://d-element.ru/" target="_blank">About</a></div>
+                            <div class="${getClassName("text")}"><a href="https://d-element.ru/" target="_blank">What We Do</a></div>
+                            <div class="${getClassName("text")}"><a href="https://d-element.ru/" target="_blank">Project</a></div>
+                            <div class="${getClassName("text")}"><a href="https://d-element.ru/" target="_blank">How It Work With Us</a></div>
                         </div>
                         <div class="${getClassName("follow")}">
-                            <div class="${getClassName("subTitle")}"><h3>Follow US</h3></div>
-                            <div class="${getClassName("text")}"><p>Instagram</p></div>
-                            <div class="${getClassName("text")}"><p>Facebook</p></div>
-                            <div class="${getClassName("text")}"><p>LinkedIn</p></div>
-                            <div class="${getClassName("text")}"><p>Youtube</p></div>
+                            <div class="${getClassName("subTitle")}"><a href="https://d-element.ru/" target="_blank"><h3>Follow US</h3></a></div>
+                            <div class="${getClassName("text")}"><a href="https://d-element.ru/" target="_blank">Instagram</a></div>
+                            <div class="${getClassName("text")}"><a href="https://d-element.ru/" target="_blank">Facebook</a></div>
+                            <div class="${getClassName("text")}"><a href="https://d-element.ru/" target="_blank">LinkedIn</a></div>
+                            <div class="${getClassName("text")}"><a href="https://d-element.ru/" target="_blank">Youtube</a></div>
                         </div>
                     </div>
                     <div class="${getClassName("rights")}"><p>2019 © Afrianska. All rights reserved.</p></div>
