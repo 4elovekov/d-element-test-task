@@ -4,6 +4,7 @@ import { Navigation } from "../../shared/ui/navigation/index.js";
 import { Card } from "../../entities/card/index.js";
 import { Footer } from "../../widgets/footer/index.js"
 import { ModalForm } from "../../entities/modalForm/index.js"
+import { ModalSuccess } from "../../entities/modalSuccess/index.js"
 
 export default () => {
 
@@ -13,6 +14,7 @@ export default () => {
             ${ModalForm({
                 children: Button({ label: "SUBMIT" })
             })}
+            ${ModalSuccess()}
             <section class="hero">
                 <div class="hero__gradient"></div>
                 ${Navigation()}

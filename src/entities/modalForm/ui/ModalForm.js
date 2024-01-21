@@ -15,6 +15,7 @@ export function ModalForm(props) {
     
     return `
             <div class="${getClassName("", extraClasses)}" ${getAttrs(extraAttrs)}>
+                <img src="/images/cross.svg" alt="cross">
                 <h3 class="${getClassName("title")}">SEND US MESSAGE</h3>
                 <form class="${getClassName("form")}">
                     <label class="${getClassName("fullName")}" for="fullName">Full Name</label>
