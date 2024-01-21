@@ -10,7 +10,9 @@ export default () => {
     return getPage({
         title: "Afrianska",
         body: `
-            ${ModalForm()}
+            ${ModalForm({
+                children: Button({ label: "SUBMIT" })
+            })}
             <section class="hero">
                 <div class="hero__gradient"></div>
                 ${Navigation()}

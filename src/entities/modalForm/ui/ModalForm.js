@@ -18,13 +18,13 @@ export function ModalForm(props) {
                 <h3 class="${getClassName("title")}">SEND US MESSAGE</h3>
                 <form class="${getClassName("form")}">
                     <label class="${getClassName("fullName")}" for="fullName">Full Name</label>
-                    <input type="text" id="fullName" placeholder="Your Name">
+                    <input type="text" id="fullName" autocomplete="name" placeholder="Your Name">
 
                     <label class="${getClassName("email")}" for="email">Email</label>
-                    <input type="text" id="email" placeholder="Your Email">
+                    <input type="email" id="email" autocomplete="email" placeholder="Your Email">
 
                     <label class="${getClassName("message")}" for="message">Message</label>
-                    <input type="text" id="message" placeholder="Your Message">
+                    <textarea rows="3" cols="1" type="text" id="message" autocomplete="off" placeholder="Your Message"></textarea>
                 </form>
                 ${children}
             </div>
