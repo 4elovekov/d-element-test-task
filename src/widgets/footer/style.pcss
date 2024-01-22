@@ -1,3 +1,4 @@
+/* stylelint-disable media-feature-range-notation */
 /* stylelint-disable custom-property-pattern */
 
 .footer {
@@ -90,7 +91,7 @@
 
         h3 {
             font-size: 28px;
-            line-height: 46px;
+            line-height: 1.6429;
             letter-spacing: .02em;
         }
     }
@@ -119,7 +120,7 @@
         font-family: "Gilroy rg", sans-serif;
         font-size: 16px;
         font-style: normal;
-        line-height: 26px;
+        line-height: 1.625;
         letter-spacing: .05em;
         cursor: pointer;
     }
@@ -145,4 +146,39 @@
         }
     }
 
+}
+
+@media (max-width: 1366px) {
+
+    .footer {
+        
+        &__line {
+            width: calc(100% - 12vw);
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .footer {
+        margin-right: 86px;
+        width: calc(100% - 86px);
+        gap: 86px;
+
+        &__title {
+            gap: 110px;
+        }
+
+        &__textBlock {
+            max-width: 420px;
+        }
+
+        &__main {
+            width: 750px;
+        }
+
+        &__subTitle > a:not(:first-child) h3 {
+            font-size: 26px;
+        }
+    }
 }

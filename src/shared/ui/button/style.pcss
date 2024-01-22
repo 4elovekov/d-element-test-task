@@ -1,3 +1,4 @@
+/* stylelint-disable media-feature-range-notation */
 /* stylelint-disable custom-property-pattern */
 
 button {
@@ -18,7 +19,7 @@ button {
         font-family: "Gilroy rg", sans-serif;
         color: rgba(255, 255, 255, 1);
         font-size: 16px;
-        line-height: 26px;
+        line-height: 1.625;
         letter-spacing: .04em;
     }
 }
@@ -29,4 +30,16 @@ button:hover {
 
 button:active {
     background-color: var(--color-blue1);
+}
+
+@media (max-width: 1024px) {
+
+    button {
+        width: 200px;
+        height: 52px;
+
+        span {
+            font-size: 15px;
+        }
+    }
 }

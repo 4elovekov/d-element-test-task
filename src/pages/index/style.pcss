@@ -1,10 +1,11 @@
+/* stylelint-disable media-feature-range-notation */
 /* stylelint-disable custom-property-pattern */
 
 h1 {
     color: var(--color-blue1);
     font-family: serif;
     font-size: 64px;
-    line-height: 74px;
+    line-height: 1.1563;
     letter-spacing: .04em;
     flex-shrink: 0;
 }
@@ -15,7 +16,7 @@ h2 {
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
-    line-height: 46px;
+    line-height: 1.2778;
     letter-spacing: .05em;
 }
 
@@ -25,7 +26,7 @@ h3 {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.5;
     letter-spacing: .05em;
 }
 
@@ -33,7 +34,7 @@ p {
     color: var(--color-blue1);
     font-family: "Gilroy rg", sans-serif;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.625;
     letter-spacing: .05em;
     opacity: 0.6;
     flex-shrink: 0;
@@ -41,7 +42,7 @@ p {
 
 .hero {
     height: 768px;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,7 +208,7 @@ p {
             font-size: 20px;
             font-style: normal;
             font-weight: 600;
-            line-height: 46px;
+            line-height: 2.3;
             letter-spacing: .02em;
             opacity: 1;
         }
@@ -244,3 +245,106 @@ p {
     }
 
 }
+
+@media (max-width: 1280px) {
+
+    h2 {
+        font-size: 33px;
+    }
+
+    .hero {
+
+        &__screen {
+            width: 100%;
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        &__textBlock {
+            width: 500px;
+
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .assist {
+        gap: 90px;
+        margin-top: 152px;
+
+        &__leftSide h2 {
+            left: -60px;
+            margin-bottom: 148px;
+        }
+
+        &__rightSide > :last-child {
+            margin-top: 90px;
+            height: auto;
+        }
+    }
+
+    .client {
+        margin-top: 162px;
+
+        &__container {
+            align-items: center;
+        }
+
+        &__title p {
+            max-width: 510px;
+        }
+    }
+
+    .logoClients {
+        margin-top: 105px;
+        margin-bottom: 115px;
+        grid-template-rows: 110px 110px;
+        grid-template-columns: 200px 200px 200px 200px;
+
+        &__item p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    p {
+        font-size: 15px;
+    }
+
+    .hero {
+        height: 580px;
+
+        &__gradient {
+            height: 580px;
+        }
+
+        &__screen {
+
+            img {
+                width: 47%;
+                height: auto;
+            }
+        }
+
+        &__textBlock{
+            width: 400px;
+
+            h1 {
+                font-size: 40px;
+                margin-bottom: 22px;
+            }
+
+            p {
+                width: 340px;
+                margin-bottom: 51px;
+            }
+        }
+    }   
+}
+
