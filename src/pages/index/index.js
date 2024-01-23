@@ -31,7 +31,7 @@ export default () => {
             </section>
             <section class="assist">
                 <div class="assist__leftSide">
-                    <h2>What we do to help our client grow in digital era,</h2>
+                    <h2>What we do to help our client grow in digital era</h2>
                     ${Card({
                         imageSrc: "/images/card_image2.svg",
                         title: "Make Your business To Be Better Famous In Internet",

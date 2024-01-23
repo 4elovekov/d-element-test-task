@@ -127,7 +127,7 @@ p {
                 position: relative;
                 top: -71px;
                 max-height: 208px;
-                margin-bottom: 51px;
+                margin-bottom: 50px;
             }
 
             > :last-child {
@@ -174,7 +174,7 @@ p {
 
         h2 {
             color: white;
-            max-width: 223px;
+            width: 223px;
         }
 
         p {
@@ -313,6 +313,18 @@ p {
 
 @media (max-width: 1024px) {
 
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
     p {
         font-size: 15px;
     }
@@ -336,8 +348,8 @@ p {
             width: 400px;
 
             h1 {
-                font-size: 40px;
                 margin-bottom: 22px;
+                font-size: 40px;
             }
 
             p {
@@ -345,6 +357,249 @@ p {
                 margin-bottom: 51px;
             }
         }
-    }   
+    }
+
+    .assist {
+        gap: 40px;
+        margin-top: 100px;
+
+        &__leftSide {
+            width: 300px;
+
+            h2 {
+                left: -30px;
+                margin-bottom: 90px;
+            }
+
+            .card {
+                height: auto;
+
+                &__image {
+                    margin-right: 40px;
+                }
+            }
+        }
+
+        &__rightSide > :last-child {
+            margin-top: 65px;
+        }
+    }
+
+    .client {
+        margin-top: 110px;
+        padding-top: 66px;
+
+        &__title {
+            gap: 30px;
+
+            h2 {
+                width: 187px;
+            }
+
+            p {
+                width: 392px;
+            }
+        }
+    }
+
+    .logoClients {
+        margin-top: 75px;
+        margin-bottom: 85px;
+        grid-template-rows: 87px 87px;
+        grid-template-columns: 160px 160px 160px 160px;
+
+        &__item {
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 430px;
+
+        &__gradient {
+            height: 430px;
+        }
+
+        &__textBlock {
+            right: 0;
+            width: 350px;
+
+            h1 {
+                font-size: 36px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                margin-bottom: 32px;
+                width: 360px;
+            }
+        }
+
+        &__screen {
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .assist {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+
+        &__leftSide {
+
+            h2 {
+                left: 0;
+                margin-bottom: 50px;
+            }
+        }
+
+        &__rightSide {
+
+            > :first-child {
+
+                > :first-child {
+                    top: -58px;
+                }
+
+                > :last-child {
+                    top: -58px;
+                }
+            }
+
+            > :last-child {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .client {
+        margin-top: 70px;
+        padding-top: 50px;
+        border-radius: 140px 0 0 0;
+
+        &__title {
+            flex-direction: column;
+            gap: 20px;
+            width: 340px;
+
+            h2 {
+                width: 270px;
+            }
+        }
+    }
+
+    .logoClients {
+        margin-top: 50px;
+        margin-bottom: 55px;
+        grid-template-rows: repeat(4, 87px);
+        grid-template-columns: repeat(2, 160px);
+
+        &__moreClients {
+            grid-area: 4 / 2 / 4 / 2;
+        }
+
+        > :last-child {
+            grid-area: 4 / 2 / 4 / 2;
+        }
+
+        > :nth-child(5) {
+            border-bottom: 1px solid white;
+        }
+    
+        > :nth-child(2), > :nth-child(6) {
+            border-right: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .hero {
+        height: 400px;
+        
+        &__gradient {
+            height: 400px;
+        }
+
+        &__textBlock {
+            width: 310px;
+            
+            h1 {
+                font-size: 33px;
+                margin-bottom: 12px;
+            }
+
+            p {
+                margin-bottom: 24px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .assist {
+        margin-top: 40px;
+
+        &__leftSide {
+            width: 280px;
+
+            h2 {
+                width: 260px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .client {
+        margin-top: 45px;
+        padding-top: 30px;
+        border-radius: 100px 0 0 0;
+
+        &__title {
+            gap: 15px;
+            max-width: 280px;
+
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .logoClients {
+        margin-top: 30px;
+        margin-bottom: 35px;
+        grid-template-rows: repeat(4, 78px);
+        grid-template-columns: repeat(2, 140px);
+
+        &__item {
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}

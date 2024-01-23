@@ -1,3 +1,4 @@
+/* stylelint-disable media-feature-range-notation */
 /* stylelint-disable custom-property-pattern */
 
 .modalSuccess {
@@ -31,4 +32,34 @@
 
 .modalSuccess.active {
     display: flex;
+}
+
+@media (max-width: 1024px) {
+    
+    .modalSuccess {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .modalSuccess {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .modalSuccess {
+        padding: 15px;
+        width: 250px;
+        height: 125px;
+
+        img {
+            top: 15px;
+            right: 15px;
+        }
+    }
 }

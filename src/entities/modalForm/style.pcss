@@ -1,3 +1,4 @@
+/* stylelint-disable media-feature-range-notation */
 /* stylelint-disable custom-property-pattern */
 
 .modalForm {
@@ -106,4 +107,83 @@
 
 .modalOpen {
     overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+
+    .modalForm {
+        height: auto;
+        gap: 40px;
+
+        img {
+            top: 56px;
+        }
+
+        form {
+    
+            input, label, textarea {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .modalForm {
+        max-width: 420px;
+        height: auto;
+        padding: 36px;
+        gap: 30px;
+
+        img {
+            top: 36px;
+            right: 36px;
+        }
+
+        form {
+
+            input, textarea {
+                padding: 17px 28px;
+                margin-bottom: 16px;
+            }
+    
+            input, label, textarea {
+                font-size: 14px;
+            }
+
+            > :last-child {
+                height: 124px;
+            }
+        }
+
+        button {
+            height: 62px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .modalForm {
+        max-width: 320px;
+        padding: 26px;
+
+        img {
+            top: 26px;
+            right: 26px;
+        }
+
+        form {
+
+            input, textarea {
+                padding: 10px 15px;
+                margin-bottom: 8px;
+            }
+        }
+
+        button {
+            height: 52px;
+        }
+    }
 }
