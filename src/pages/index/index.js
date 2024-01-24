@@ -39,17 +39,17 @@ export default () => {
                 <div class="assist__leftSide">
                     <h2>What we do to help our client grow in digital era</h2>
                     ${Card({
-                        imageSrc: "/images/card_image2.svg",
+                        imageSrc: "images/card_image2.svg",
                         title: "Make Your business To Be Better Famous In Internet",
                     })}
                 </div>
                 <div class="assist__rightSide">
                     ${Card({
-                        imageSrc: "/images/card_image1.svg",
+                        imageSrc: "images/card_image1.svg",
                         title: "Bring Technology To Your Comfrotable Home",
                     })}
                     ${Card({
-                        imageSrc: "/images/card_image3.svg",
+                        imageSrc: "images/card_image3.svg",
                         title: "Build Your Digital Product That Suitable For Your Need",
                     })}
                 </div>

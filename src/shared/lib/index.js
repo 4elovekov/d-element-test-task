@@ -8,7 +8,7 @@ export const getPage = ({ body = ``, title = ``, meta = [] }) => {
       <head>
         ${[ ...defaultMeta, ...meta ].join("")}
         <title>${title}</title>
-        <script src="/src/app/App.js" defer type="module"></script>
+        <script src="src/app/App.js" defer type="module"></script>
       </head>
       <body>
         ${body}

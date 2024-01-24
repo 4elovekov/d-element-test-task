@@ -24,7 +24,7 @@ export function Card(props) {
                 <div class="${getClassName("textBlock")}">
                     <h3 class="${getClassName("title")}">${title}</h3>
                     <p class="${getClassName("text")}">${text || defaultText}</p>
-                    <a class="${getClassName("link")}" href="${link || defaultLink}">Learn more<img src="/images/arrow_right.svg" alt="card image"/></a>
+                    <a class="${getClassName("link")}" href="${link || defaultLink}">Learn more<img src="images/arrow_right.svg" alt="card image"/></a>
                 </div>
             </div>
             `

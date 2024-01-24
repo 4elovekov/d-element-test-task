@@ -28,7 +28,7 @@ export function Footer(props) {
                     <div class="${getClassName("info")}">
                         <div class="${getClassName("contacts")}">
                             <div class="${getClassName("subTitle")}">
-                                <img src="/images/footer_logo.png" alt="logo">
+                                <img src="images/footer_logo.png" alt="logo">
                                 <a href="#" target="_blank"><h3>Afrianska</h3></a>
                             </div>
                             <div class="${getClassName("text")}">
