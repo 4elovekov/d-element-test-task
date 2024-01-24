@@ -5,6 +5,7 @@ import { Card } from "../../entities/card/index.js";
 import { Footer } from "../../widgets/footer/index.js"
 import { ModalForm } from "../../entities/modalForm/index.js"
 import { ModalSuccess } from "../../entities/modalSuccess/index.js"
+import { OpenModalForm } from "../../features/openModalForm/index.js";
 
 export default () => {
 
@@ -67,7 +68,11 @@ export default () => {
                     </div>
                 </div>
                 ${Footer({
-                    children: Button({ label: "Let’s Talk" })
+                    children: OpenModalForm({
+                        extraAttrs: {
+                            "id": "openModalForm",
+                        }
+                    })
                 })}
             </section>
             
