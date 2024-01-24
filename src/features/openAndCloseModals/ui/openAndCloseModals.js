@@ -1,7 +1,7 @@
 import { commonComponentProps } from "../../../shared/lib";
 import { Button } from "../../../shared/ui/button";
 
-export function OpenModalForm(props) {
+export function OpenAndCloseModals(props) {
 
     const {
         extraClasses = {},

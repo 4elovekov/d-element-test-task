@@ -1,8 +1,10 @@
-import OpenModalForm from "../features/openModalForm/model/index.js"
+import OpenAndCloseModals from "../features/openAndCloseModals/model/index.js"
+import Validation from "../features/validation/model/index.js"
 
 const runApp = async () => {
     const runFeatures = async() => {
-        new OpenModalForm()
+        new OpenAndCloseModals()
+        new Validation()
         await Promise.all(Object.keys(import.meta.glob("../**/*.pcss", { "query": "?inline" })).map(path => import(/* @vite-ignore */`${path}`).then((module) => module?.default ?? module)))
     }
 

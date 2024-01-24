@@ -5,7 +5,7 @@ import { Card } from "../../entities/card/index.js";
 import { Footer } from "../../widgets/footer/index.js"
 import { ModalForm } from "../../entities/modalForm/index.js"
 import { ModalSuccess } from "../../entities/modalSuccess/index.js"
-import { OpenModalForm } from "../../features/openModalForm/index.js";
+import { OpenAndCloseModals } from "../../features/openAndCloseModals/index.js";
 
 export default () => {
 
@@ -13,7 +13,12 @@ export default () => {
         title: "Afrianska",
         body: `
             ${ModalForm({
-                children: Button({ label: "SUBMIT" })
+                children: Button({
+                    label: "SUBMIT",
+                    extraAttrs: {
+                        "id": "submit"
+                    }
+                })
             })}
             ${ModalSuccess()}
             <section class="hero">
@@ -68,7 +73,7 @@ export default () => {
                     </div>
                 </div>
                 ${Footer({
-                    children: OpenModalForm({
+                    children: OpenAndCloseModals({
                         extraAttrs: {
                             "id": "openModalForm",
                         }

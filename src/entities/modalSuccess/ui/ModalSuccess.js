@@ -14,7 +14,7 @@ export function ModalSuccess(props) {
     
     return `
             <div class="${getClassName("", extraClasses)}" ${getAttrs(extraAttrs)}>
-                <img src="/images/cross.svg" alt="cross">
+                <img src="/images/cross.svg" alt="cross" class="${getClassName("cross")}">
                 <h2 class="${getClassName("title")}">SUCCESS!</h2>
             </div>
             `
