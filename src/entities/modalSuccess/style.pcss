@@ -1,0 +1,65 @@
+/* stylelint-disable media-feature-range-notation */
+/* stylelint-disable custom-property-pattern */
+
+.modalSuccess {
+    width: 30%;
+    height: 30%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 5px 10px 50px 0 rgba(16, 112, 177, 0.20);
+    align-self: center;
+    justify-self: center;
+    opacity: 1;
+
+    img {
+        color: var(--color-blue1);
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+}
+
+.modalSuccess.active {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    
+    .modalSuccess {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .modalSuccess {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .modalSuccess {
+        padding: 15px;
+        width: 250px;
+        height: 125px;
+
+        img {
+            top: 15px;
+            right: 15px;
+        }
+    }
+}
