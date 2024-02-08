@@ -1,0 +1,57 @@
+/* stylelint-disable media-feature-range-notation */
+/* stylelint-disable custom-property-pattern */
+
+button {
+    margin: 0;
+    width: 220px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    background-color:  var(--color-blue4);
+    box-shadow: 5px 10px 20px 0 rgba(53, 110, 173, 0.2);
+    transition: background 0.25s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-family: "Gilroy rg", sans-serif;
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        line-height: 1.625;
+        letter-spacing: .04em;
+    }
+}
+
+button:hover {
+    background-color: var(--color-blue2);
+}
+
+button:active {
+    background-color: var(--color-blue1);
+}
+
+@media (max-width: 1024px) {
+
+    button {
+        width: 200px;
+        height: 52px;
+
+        span {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    button {
+        width: 180px;
+        height: 48px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+}

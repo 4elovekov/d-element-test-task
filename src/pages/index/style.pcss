@@ -1,0 +1,605 @@
+/* stylelint-disable media-feature-range-notation */
+/* stylelint-disable custom-property-pattern */
+
+h1 {
+    color: var(--color-blue1);
+    font-family: serif;
+    font-size: 64px;
+    line-height: 1.1563;
+    letter-spacing: .04em;
+    flex-shrink: 0;
+}
+
+h2 {
+    color: var(--color-blue2);
+    font-family: "Gilroy rg", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2778;
+    letter-spacing: .05em;
+}
+
+h3 {
+    color: var(--color-blue1);
+    font-family: "Gilroy rg", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .05em;
+}
+
+p {
+    color: var(--color-blue1);
+    font-family: "Gilroy rg", sans-serif;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: .05em;
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+.hero {
+    height: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__gradient {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 768px;
+        width: 100%;
+        opacity: 0.2;
+        background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0.00) 31.12%);
+        z-index: -1;
+        flex-shrink: 0;
+    }
+
+    &__screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        img {
+            flex-shrink: 0;
+            position: relative;
+            bottom: -20px;
+        }
+    }
+
+    &__textBlock {
+        width: 590px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        position: relative;
+        right: -80px;
+
+        h1 {
+            margin-bottom: 32px;
+        }
+
+        p {
+            width: 425px;
+            margin-bottom: 71px;
+        }
+    }
+}
+
+.assist {
+    margin-top: 192px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+
+    &__leftSide {
+
+        h2 {
+            position: relative;
+            left: -80px;
+            margin-bottom: 158px;
+            max-width: 359px;
+        }
+
+        .card {
+
+            &__image {
+                max-height: 132px;
+                margin-right: 76px;
+                margin-bottom: 56px;
+            }
+        }
+    }
+
+    &__rightSide { 
+
+        > :first-child {
+
+            > :first-child {
+                position: relative;
+                top: -71px;
+                max-height: 208px;
+                margin-bottom: 50px;
+            }
+
+            > :last-child {
+                position: relative;
+                top: -71px;
+            }
+        }
+
+        > :last-child {
+            margin-top: 100px;
+        
+            > :first-child {
+                max-height: 132px;
+                margin-right: 40px;
+                margin-bottom: 55px;
+            }
+        }
+    }
+}
+
+.client {
+    margin-top: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 200px 0 0 0;
+    background: var(--color-blue4);
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 96px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        gap: 97px;
+
+
+        h2 {
+            color: white;
+            width: 223px;
+        }
+
+        p {
+            color: white;
+            max-width: 540px;
+        }
+    }
+
+}
+
+.logoClients {
+    margin-top: 111px;
+    margin-bottom: 125px;
+    display: grid;
+    grid-template-rows: 128px 128px;
+    grid-template-columns: 235px 235px 235px 235px;
+    border-collapse: collapse;
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-collapse: collapse;
+
+        p {
+            z-index: 2;
+            color: white;
+            font-family: "Gilroy rg", sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 2.3;
+            letter-spacing: .02em;
+            opacity: 1;
+        }
+    }
+
+    &__moreClients {
+        z-index: 2;
+        grid-area: 2 / 4 / 2 / 4;
+        cursor: pointer;
+        transition: background 0.25s;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+    }
+
+    &__moreClients:hover {
+        background-color: var(--color-blue2);
+    }
+
+    > :nth-child(2n-1), > :nth-child(2), > :nth-child(6) {
+        border-right: 1px solid white;
+    }
+
+    > :nth-child(1), > :nth-child(2), > :nth-child(3), > :nth-child(4) {
+        border-bottom: 1px solid white;
+    }
+
+    > :last-child {
+        z-index: 1;
+        grid-area: 2 / 4 / 2 / 4;
+        opacity: 0.2;
+        background: var(--color-blue1);
+        border-right: none;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    h2 {
+        font-size: 33px;
+    }
+
+    .hero {
+
+        &__screen {
+            width: 100%;
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        &__textBlock {
+            width: 500px;
+
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .assist {
+        gap: 90px;
+        margin-top: 152px;
+
+        &__leftSide h2 {
+            left: -60px;
+            margin-bottom: 148px;
+        }
+
+        &__rightSide > :last-child {
+            margin-top: 90px;
+            height: auto;
+        }
+    }
+
+    .client {
+        margin-top: 162px;
+
+        &__container {
+            align-items: center;
+        }
+
+        &__title p {
+            max-width: 510px;
+        }
+    }
+
+    .logoClients {
+        margin-top: 105px;
+        margin-bottom: 115px;
+        grid-template-rows: 110px 110px;
+        grid-template-columns: 200px 200px 200px 200px;
+
+        &__item p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .hero {
+        height: 580px;
+
+        &__gradient {
+            height: 580px;
+        }
+
+        &__screen {
+
+            img {
+                width: 47%;
+                height: auto;
+            }
+        }
+
+        &__textBlock{
+            width: 400px;
+
+            h1 {
+                margin-bottom: 22px;
+                font-size: 40px;
+            }
+
+            p {
+                width: 340px;
+                margin-bottom: 51px;
+            }
+        }
+    }
+
+    .assist {
+        gap: 40px;
+        margin-top: 100px;
+
+        &__leftSide {
+            width: 300px;
+
+            h2 {
+                left: -30px;
+                margin-bottom: 90px;
+            }
+
+            .card {
+                height: auto;
+
+                &__image {
+                    margin-right: 40px;
+                }
+            }
+        }
+
+        &__rightSide > :last-child {
+            margin-top: 65px;
+        }
+    }
+
+    .client {
+        margin-top: 110px;
+        padding-top: 66px;
+
+        &__title {
+            gap: 30px;
+
+            h2 {
+                width: 187px;
+            }
+
+            p {
+                width: 392px;
+            }
+        }
+    }
+
+    .logoClients {
+        margin-top: 75px;
+        margin-bottom: 85px;
+        grid-template-rows: 87px 87px;
+        grid-template-columns: 160px 160px 160px 160px;
+
+        &__item {
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 430px;
+
+        &__gradient {
+            height: 430px;
+        }
+
+        &__textBlock {
+            right: 0;
+            width: 350px;
+
+            h1 {
+                font-size: 36px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                margin-bottom: 32px;
+                width: 360px;
+            }
+        }
+
+        &__screen {
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .assist {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+
+        &__leftSide {
+
+            h2 {
+                left: 0;
+                margin-bottom: 50px;
+            }
+        }
+
+        &__rightSide {
+
+            > :first-child {
+
+                > :first-child {
+                    top: -58px;
+                }
+
+                > :last-child {
+                    top: -58px;
+                }
+            }
+
+            > :last-child {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .client {
+        margin-top: 70px;
+        padding-top: 50px;
+        border-radius: 140px 0 0 0;
+
+        &__title {
+            flex-direction: column;
+            gap: 20px;
+            width: 340px;
+
+            h2 {
+                width: 270px;
+            }
+        }
+    }
+
+    .logoClients {
+        margin-top: 50px;
+        margin-bottom: 55px;
+        grid-template-rows: repeat(4, 87px);
+        grid-template-columns: repeat(2, 160px);
+
+        &__moreClients {
+            grid-area: 4 / 2 / 4 / 2;
+        }
+
+        > :last-child {
+            grid-area: 4 / 2 / 4 / 2;
+        }
+
+        > :nth-child(5) {
+            border-bottom: 1px solid white;
+        }
+    
+        > :nth-child(2), > :nth-child(6) {
+            border-right: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .hero {
+        height: 400px;
+        
+        &__gradient {
+            height: 400px;
+        }
+
+        &__textBlock {
+            width: 310px;
+            
+            h1 {
+                font-size: 33px;
+                margin-bottom: 12px;
+            }
+
+            p {
+                margin-bottom: 24px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .assist {
+        margin-top: 40px;
+
+        &__leftSide {
+            width: 280px;
+
+            h2 {
+                width: 260px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .client {
+        margin-top: 45px;
+        padding-top: 30px;
+        border-radius: 100px 0 0 0;
+
+        &__title {
+            gap: 15px;
+            max-width: 280px;
+
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .logoClients {
+        margin-top: 30px;
+        margin-bottom: 35px;
+        grid-template-rows: repeat(4, 78px);
+        grid-template-columns: repeat(2, 140px);
+
+        &__item {
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
